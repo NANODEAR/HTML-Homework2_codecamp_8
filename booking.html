@@ -1,0 +1,86 @@
+<html> 
+    <HEAD>
+        <TITLE>HOMEWORK2_FORM</TITLE>
+    </HEAD>
+    <body>
+        <table style="font-size:150%; width:50%">
+            <tr>
+                <td colspan="2"> 
+                    <form action="/action_page.php" target="_blank" method="get">
+                        <label for="from">Flying from </label><br>
+                            <select id="provinces" name="provinces">
+                                <option value="Bangkok">Bangkok</option>
+                                <option value="Chiangmai">Chiangmai</option>
+                                <option value="Phuket">Phuket</option>
+                                <option value="Khonken">Khonken</option>
+                            </select>
+                    </form>
+                </td>
+                <td colspan="2"> 
+                    <form action="/action_page.php" target="_blank" method="get">
+                        <label for="to">To </label><br>
+                            <select id="provinces" name="provinces">
+                                <option value="Bangkok">Bangkok</option>
+                                <option value="Chiangmai">Chiangmai</option>
+                                <option value="Phuket">Phuket</option>
+                                <option value="Khonken">Khonken</option>
+                            </select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <form action="/action_page.php">
+                        <label for="departing">Departing</label><br>
+                        <input type="date" id="departing" name="departing">
+                    </form>
+                </td>
+                <td colspan="2">
+                    <form action="/action_page.php">
+                        <label for="Returning">Returning</label><br>
+                        <input type="date" id="Returning" name="Returning">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="/action_page.php">
+                        <label for="Adult">Adult</label><br>
+                        <input type="number"id="quantity" name="quantity" min="0" max="100" >
+                    </form>
+                </td>
+                <td>
+                    <form action="/action_page.php">
+                        <label for="Child">Child</label><br>
+                        <input type="number"id="quantity" name="quantity" min="0" max="100">
+                    </form>
+                </td>
+                <td>
+                    <form action="/action_page.php">
+                        <label for="Infant">Infant</label><br>
+                        <input type="number"id="quantity" name="quantity" min="0" max="100">
+                    </form>
+                </td>
+                <td>
+                    <form action="/action_page.php">
+                        <label for="Currency">Currency </label><br>
+                        <select id="Currency" name="Currency">
+                            <option value="BTH">BTH</option>
+                            <option value="USD">USD</option>
+                            <option value="CNY">CNY</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td colspan="4"> 
+                    <form>
+                        <input type="button" onclick="alert('SEARCHING')" value="SEARCH">
+                      </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
